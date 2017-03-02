@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anna Rychkova](https://up.htmlacademy.ru/adaptive/10/user/168215).
-* Наставник: `Николай Маркелов`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nicolamarkelov).
 
 ---
 
