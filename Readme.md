@@ -2,7 +2,7 @@
 
 * Студент: [Anna Rychkova](https://up.htmlacademy.ru/adaptive/10/user/168215).
 * Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nicolamarkelov).
-
+* 09/03
 ---
 
 **Обратите внимание на файлы:**
