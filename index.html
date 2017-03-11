@@ -5,8 +5,145 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+    <a class="logo" href="#">Pink</a>
+    <nav class="main-nav main-nav--closed" >
+      <div class="main-nav__toggle"><img src="http://placehold.it/50x24"></div>
+      <div class="main-nav__wraper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a>Конкурс</a></li>
+            <li class="main-nav__item"><a>HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="page-content">
+        
+      <section class="download">
+        <div class="download_wraper">
+          <input type="button" class="download__down-app btn" value="Скачать приложение"> 
+          <div class="download__version">
+            <ul class="download__list">
+              <li class="download__item"><img src="http://placehold.it/47x56"></li>  
+              <li class="download__item"><img src="http://placehold.it/43x47"></li>  
+              <li class="download__item"><img src="http://placehold.it/44x41"></li>  
+            </ul>
+            <p class="download_desc">Доступно для iPhone, iPad, Android, WindowsPhone, OSX, Windows 8</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="benefits">
+        <div class="benefit__wrapper">
+          <h2 class="benefits__tittle">Устали от серости мегаполиса?<br>Нам есть что предложить!</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <h3 class="benefits__item-title">Поднимает настроение</h3>
+              <p class="benefits__item-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="benefits__item">
+              <h3 class="benefits__item-title">Меняет мир вокруг</h3>
+              <p class="benefits__item-desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="benefits__item">
+              <h3 class="benefits__item-title">Заводит новых друзей</h3>
+              <p class="benefits__item-desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="benefits__image"><img src="http://placehold.it/157x320"></div>
+        </div>
+      </section>  
+      
+      <section class="reviews">
+        <div class="reviews__wraper slider">
+        <h2 class="reviews__tiile visually-hidden">Отзывы пользователей Pink</h2>    
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+	      <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+	      <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+	      <ul class="reviews__list">
+		    <li class="reviews__item reviews__item--first slider__item">
+              <blockquote class="review__item" enabled>
+              <cite>Николай Петров</cite>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="review__item" disabled>
+              <cite>Николай Петров</cite>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li> 
+            <li class="reviews__item slider__item">
+              <blockquote class="review__item" disabled>
+              <cite>Николай Петров</cite>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>   
+          </ul>  
+        </div>
+      </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+      <section class="catalog">
+       <div class="catalog__wraper slider">
+          <h2 class="catalog__tiile visually-hidden">Каталог версий Pink</h2>    
+          <input class="slider__input" type="radio" name="catalog" id="catalog-input-1" checked>
+	      <input class="slider__input" type="radio" name="catalog" id="catalog-input-2">
+	      <input class="slider__input" type="radio" name="catalog" id="catalog-input-2">
+	      <ul class="catalog__list">
+		    <li class="catalog__item catalog__item--first slider__item">
+              <h2 class="catalog__item-title">Стандарт</h2>
+              <span class="catalog__item-price">3,99 USD</span>
+              <table>
+                <tr>
+                  <td>Розовый фильтр</td>
+                  <td><img src="http://placehold.it/31x21"></td>
+                </tr>
+                <tr>
+                  <td>Смайлики</td>
+                  <td><img src="http://placehold.it/31x21"></td>
+                </tr> 
+                <tr>
+                  <td>Комментарии</td>
+                  <td><img src="http://placehold.it/27x26"></td>
+                </tr>
+              </table>
+            </li>
+            <li class="catalog__item slider__item"></li>
+		    <li class="catalog__item slider__item"></li>
+          </ul>
+          <div class="catalog__toggles slider__toggles">
+		    <label class="slider__toggle" for="catalog-input-1"></label>
+            <label class="slider__toggle" for="catalog-input-2"></label>
+            <label class="slider__toggle" for="catalog-input-3"></label>
+	      </div>
+        </div>
+      </section>
+    
+      <section class="footer">
+        <div class="footer__wraper">
+          <p class=>Остались вопросы? Свяжитесь с нами!</p>
+          <div class="footer__contact">
+            <div class="footer_call">
+              <h3>Звоните:</h3>
+              <span class="contact-phonenumber">+7 (918) 555-66-66</span>
+            </div>
+            <div class="footer__email">
+              <h3>Пишите:</h3>
+              <span class="contact-email">+7 (918) 555-66-66</span>
+            </div>
+            <div class="footer__adress">
+              <h3>Приезжайте:</h3>
+              <span class="contact-adress">ул. Большая Конюшенная, 19/8</span>
+            </div>
+          </div> 
+          <div class="footer__map">
+            <img src="http://placehold.it/320x200">
+          </div>
+        </div>
+      </section>
+    </section>
   </body>
 </html>

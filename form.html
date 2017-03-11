@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк : Конкурс на самое безбашенное путешествие с Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">Pink</a>
+      <nav class="main-nav main-nav--opened" >
+        <div class="main-nav__toggle"><img src="placehold.it/24*23">
+        </div>
+        <div class="main-nav__wraper">
+          <ul class="main-nav--list">
+            <li class="main-nav--item"><a>Главная</a></li>
+            <li class="main-nav--item"><a>Фотографии</a></li>
+            <li class="main-nav--item main-nav--active"><a>Конкурс</a></li>
+            <li class="main-nav--item"><a>HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__title"><h1>Конкурс на самое безбашенное путешествие с Пинк</h1></div>
+    </header>
+    
+    <section class="page-content">
+        
+      <section class="dataform">
+        <div class="dataform__wrapper">
+            <p class="dataform__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+            <form class="dataform__user-and-application" action="https://echo.htmlacademy.ru" method="get">
+              <div class="dataform__user">
+                <label>Фамилия:<br><input type="text" name="last-name"></label><br>
+                <label>Имя:<br><input type="text" name="first-name"></label><br>
+                <label>Отчество:<br><input type="text" name="father-name"></label>
+              </div>
+              <div class="dataform__progress">
+                <h2 class="dataform__progress-title">Ваши безбашенные достижения в путешествии</h2>
+                <label><input type="checkbox" name="progress-1">Сделал селфи с акулой</label><br>
+                <label><input type="checkbox" name="progress-2">Обгорел на пляже</label><br>
+                <label><input type="checkbox" name="progress-3">Видел Чака Норриса</label><br>
+                <label><input type="checkbox" name="progress-4">Накупил сувениров</label><br>
+                <label><input type="checkbox" name="progress-5">Удержал башню</label><br>
+                <label><input type="checkbox" name="progress-6">Разгромил отель</label>
+              </div>   
+              <div class="dataform__contact">
+               <label>Номер телефона:<br><input type="text" name="user-phone" placeholder="Номер телефона"></label><br>
+                <label>Адрес почты:<br><input type="text" name="user-email" placeholder="Введите почту*"></label>
+              </div>
+              <div class="dataform__application">
+                <h2 class="dataform__application-title">С каким приложением путешествовали?</h2>
+                <label><input type="radio" name="apps-1">Pink для iOS</label><br>
+                <label><input type="radio" name="apps-2">Pink на Android</label><br>
+                <label><input type="radio" name="apps-3">Windows Phone</label><br>
+              </div>  
+              <div class="dataform__comment">
+                <textarea rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>  
+              </div>
+              <input type="submit" value="Сохранить">       
+              <div class="dataform__foot-note">
+                <span><sup>*</sup>Обязательные поля</span>  
+              </div>    
+            </form>
+          </div>
+      </section>
+      
+      <section class="footer">
+        <div class="footer__wrapper">
+          <a class="footer__logo"><img src="http://placehold.it/147x40"></a>
+          <div class="social">
+            <a class="social__link btn" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
+            <a class="social__link btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          </div>
+          <div class="footer__copyright">
+            <span class="copyright-text">Разработано <a href="https://htmlacademy.ru">HTML Academy</a></span>
+          </div>
+        </div>
+      </section>  
+        
+    </section>
+  </body>
+</html>
