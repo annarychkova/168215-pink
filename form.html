@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк : Конкурс на самое безбашенное путешествие с Пинк</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">Pink</a>
-      <nav class="main-nav main-nav--opened" >
-        <div class="main-nav__toggle"><img src="placehold.it/24*23">
+        <a class="page-header__logo" href="#">Pink</a>
+         <div class="main-nav main-nav--opened">
+             <button class="btn btn--nav-toggle" type="button">Открыть/закрыть меню</button>
+             <nav class="main-nav__wrapper">
+                    <a class="main-nav__item">Главная</a>
+                    <a class="main-nav__item">Фотографии</a>
+                    <a class="main-nav__item main-nav--active">Конкурс</a>
+                    <a class="main-nav__item">HTML Academy</a>
+            </nav>
         </div>
-        <div class="main-nav__wraper">
-          <ul class="main-nav--list">
-            <li class="main-nav--item"><a>Главная</a></li>
-            <li class="main-nav--item"><a>Фотографии</a></li>
-            <li class="main-nav--item main-nav--active"><a>Конкурс</a></li>
-            <li class="main-nav--item"><a>HTML Academy</a></li>
-          </ul>
+        <div class="page-header__title">
+            <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
-      </nav>
-      <div class="page-header__title"><h1>Конкурс на самое безбашенное путешествие с Пинк</h1></div>
     </header>
+
+    <main class="page-content">
+        <section class="dataform">
+            <div class="dataform__wrapper">
+                <p class="dataform__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
+                    заполните форму ниже:</p>
+                <form class="dataform__form" action="https://echo.htmlacademy.ru" method="POST">
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Фамилия:<input class="dataform__inp-text" type="text" name="last-name" placeholder="Укажите фамилию*"></label><br>
+                        <label class="dataform__label">Имя:<input class="dataform__inp-text" type="text" name="first-name" placeholder="Введите ваше имя*"></label><br>
+                        <label class="dataform__label">Отчество:<input class="dataform__inp-text" type="text" name="father-name" placeholder="Ну и отчество тоже"></label>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Ваши безбашенные достижения в путешествии</label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-1"><span class="labeled-checkbox__name">Сделал селфи с акулой</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-2"><span class="labeled-checkbox__name">Обгорел на пляже</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-3"><span class="labeled-checkbox__name">Видел Чака Норриса</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-4"><span class="labeled-checkbox__name">Накупил сувениров</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-5"><span class="labeled-checkbox__name">Удержал башню</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-6"><span class="labeled-checkbox__name">Разгромил отель</span></label>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Номер телефона:<input class="dataform__inp-text" type="text" name="user-phone" placeholder="Номер телефона"></label>
+                        <label class="dataform__label">Адрес почты:<input class="dataform__inp-text" type="text" name="user-email" placeholder="Введите почту*"></label>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">С каким приложением путешествовали?</label>
+                        <label class="labeled-radio"><input type="radio" name="apps-1"><span class="labeled-radio__name">Pink для iOS</span></label><br>
+                        <label class="labeled-radio"><input type="radio" name="apps-2"><span class="labeled-radio__name">Pink на Android</span></label><br>
+                        <label class="labeled-radio"><input type="radio" name="apps-3"><span class="labeled-radio__name">Windows Phone</span></label><br>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Опишите ваши эмоции</label>
+                        <textarea class="dataform__inp-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </div>
+                    <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+                    <div class="dataform__foot-note">
+                    <span class="star">*</span>&mdash;Обязательные поля
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     
-    <section class="page-content">
-        
-      <section class="dataform">
-        <div class="dataform__wrapper">
-            <p class="dataform__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-            <form class="dataform__user-and-application" action="https://echo.htmlacademy.ru" method="get">
-              <div class="dataform__user">
-                <label>Фамилия:<br><input type="text" name="last-name"></label><br>
-                <label>Имя:<br><input type="text" name="first-name"></label><br>
-                <label>Отчество:<br><input type="text" name="father-name"></label>
-              </div>
-              <div class="dataform__progress">
-                <h2 class="dataform__progress-title">Ваши безбашенные достижения в путешествии</h2>
-                <label><input type="checkbox" name="progress-1">Сделал селфи с акулой</label><br>
-                <label><input type="checkbox" name="progress-2">Обгорел на пляже</label><br>
-                <label><input type="checkbox" name="progress-3">Видел Чака Норриса</label><br>
-                <label><input type="checkbox" name="progress-4">Накупил сувениров</label><br>
-                <label><input type="checkbox" name="progress-5">Удержал башню</label><br>
-                <label><input type="checkbox" name="progress-6">Разгромил отель</label>
-              </div>   
-              <div class="dataform__contact">
-               <label>Номер телефона:<br><input type="text" name="user-phone" placeholder="Номер телефона"></label><br>
-                <label>Адрес почты:<br><input type="text" name="user-email" placeholder="Введите почту*"></label>
-              </div>
-              <div class="dataform__application">
-                <h2 class="dataform__application-title">С каким приложением путешествовали?</h2>
-                <label><input type="radio" name="apps-1">Pink для iOS</label><br>
-                <label><input type="radio" name="apps-2">Pink на Android</label><br>
-                <label><input type="radio" name="apps-3">Windows Phone</label><br>
-              </div>  
-              <div class="dataform__comment">
-                <textarea rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>  
-              </div>
-              <input type="submit" value="Сохранить">       
-              <div class="dataform__foot-note">
-                <span><sup>*</sup>Обязательные поля</span>  
-              </div>    
-            </form>
+    <footer>
+      <div class="footer__wrapper">
+        <a class="footer__logo"><img src="http://placehold.it/147x40" alt="Pink"></a>
+        <div class="social">
+          <a class="btn-social btn-social--twitter" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="btn-social btn-social--facebook" href="https://facebook.com/htmlacademy">Фейсбук</a>
+          <a class="btn-social btn-social--instagram" href="https://instagram.com/htmlacademy">Инстаграм</a>
           </div>
-      </section>
-      
-      <section class="footer">
-        <div class="footer__wrapper">
-          <a class="footer__logo"><img src="http://placehold.it/147x40"></a>
-          <div class="social">
-            <a class="social__link btn" href="https://vk.com/htmlacademy">Вконтакте</a>
-            <a class="social__link btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
-            <a class="social__link btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
-          </div>
-          <div class="footer__copyright">
-            <span class="copyright-text">Разработано <a href="https://htmlacademy.ru">HTML Academy</a></span>
-          </div>
+        <div class="footer__copyright">
+          Разработано <a href="https://htmlacademy.ru">HTML Academy</a>
         </div>
-      </section>  
-        
-    </section>
+      </div>
+    </footer>
   </body>
 </html>
