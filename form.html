@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк : Конкурс на самое безбашенное путешествие с Пинк</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo" href="#">Pink</a>
+         <div class="main-nav main-nav--opened">
+             <button class="btn btn--nav-toggle" type="button">Открыть/закрыть меню</button>
+             <nav class="main-nav__wrapper">
+                    <a class="main-nav__item">Главная</a>
+                    <a class="main-nav__item">Фотографии</a>
+                    <a class="main-nav__item main-nav--active">Конкурс</a>
+                    <a class="main-nav__item">HTML Academy</a>
+            </nav>
+        </div>
+        <div class="page-header__title">
+            <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="dataform">
+            <div class="dataform__wrapper">
+                <p class="dataform__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
+                    заполните форму ниже:</p>
+                <form class="dataform__form" action="https://echo.htmlacademy.ru" method="POST">
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Фамилия:<input class="dataform__inp-text" type="text" name="last-name" placeholder="Укажите фамилию*"></label><br>
+                        <label class="dataform__label">Имя:<input class="dataform__inp-text" type="text" name="first-name" placeholder="Введите ваше имя*"></label><br>
+                        <label class="dataform__label">Отчество:<input class="dataform__inp-text" type="text" name="father-name" placeholder="Ну и отчество тоже"></label>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Ваши безбашенные достижения в путешествии</label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-1"><span class="labeled-checkbox__name">Сделал селфи с акулой</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-2"><span class="labeled-checkbox__name">Обгорел на пляже</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-3"><span class="labeled-checkbox__name">Видел Чака Норриса</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-4"><span class="labeled-checkbox__name">Накупил сувениров</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-5"><span class="labeled-checkbox__name">Удержал башню</span></label>
+                        <label class="labeled-checkbox"><input type="checkbox" name="progress-6"><span class="labeled-checkbox__name">Разгромил отель</span></label>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Номер телефона:<input class="dataform__inp-text" type="text" name="user-phone" placeholder="Номер телефона"></label>
+                        <label class="dataform__label">Адрес почты:<input class="dataform__inp-text" type="text" name="user-email" placeholder="Введите почту*"></label>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">С каким приложением путешествовали?</label>
+                        <label class="labeled-radio"><input type="radio" name="apps-1"><span class="labeled-radio__name">Pink для iOS</span></label><br>
+                        <label class="labeled-radio"><input type="radio" name="apps-2"><span class="labeled-radio__name">Pink на Android</span></label><br>
+                        <label class="labeled-radio"><input type="radio" name="apps-3"><span class="labeled-radio__name">Windows Phone</span></label><br>
+                    </div>
+                    <div class="dataform__formgroup">
+                        <label class="dataform__label">Опишите ваши эмоции</label>
+                        <textarea class="dataform__inp-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </div>
+                    <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+                    <div class="dataform__foot-note">
+                    <span class="star">*</span>&mdash;Обязательные поля
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+      <div class="footer__wrapper">
+        <a class="footer__logo"><img src="http://placehold.it/147x40" alt="Pink"></a>
+        <div class="social">
+          <a class="btn-social btn-social--twitter" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="btn-social btn-social--facebook" href="https://facebook.com/htmlacademy">Фейсбук</a>
+          <a class="btn-social btn-social--instagram" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          </div>
+        <div class="footer__copyright">
+          Разработано <a href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
